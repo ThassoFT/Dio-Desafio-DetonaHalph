@@ -1,5 +1,5 @@
 ## Dio-Desafio-DetonaRalph
-repositório criado para desafio de jogo detona half do bootcamp dio e potencia tech.
+repositório criado para desafio de jogo detona Ralf do bootcamp dio e potencia tech.
 
 ## Tecnologias utilizadas:
 HTML, CSS e JavaScript 
