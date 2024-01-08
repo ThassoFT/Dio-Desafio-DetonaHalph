@@ -1,13 +1,280 @@
 .container {
+    height: 100vh;
+    width: 100vw;
     display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+    background-image: url(../imagens/wall.png);
 }
 
+
 .menu {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    height: 90px;
     width: 100%;
-    background-color: #000;
+    height: 15%;
+    display: flex;
     color: #fff;
+    align-items: center;
+    background-color: #000;
+    justify-content: space-evenly;
+    border-bottom: 5px solid #ffd700;
+}
+
+.menuStarter {
+    z-index: 10;
+    display: flex;
+    color: #ffe4c7;
+    margin: 10vh auto;
+    border-radius: 5%;
+    border-style: solid;
+    align-items: center;
+    border-color: #000;
+    align-content: center;
+    flex-direction: column;
+    justify-content: space-around;
+    background: linear-gradient(to bottom, transparent, #ae5c04be),
+        url("../imagens/wall.png");
+}
+
+.retry {
+    z-index: 10;
+    display: flex;
+    color: #ffe4c7;
+    margin: 10vh auto;
+    border-radius: 5%;
+    border-style: solid;
+    align-items: center;
+    border-color: #000;
+    align-content: center;
+    flex-direction: column;
+    background: linear-gradient(to bottom, transparent, #641102be),
+        url("../imagens/wall.png");
+}
+
+.hidder {
+    display: none;
+}
+
+.selectDificult {
+    display: flex;
+    padding: auto 2%;
+    flex-direction: row;
+}
+
+.dificultMode {
+    margin: 2%;
+    display: flex;
+    flex-direction: row;
+}
+
+.hardPlus {
+    color: #ffe4c7;
+    border: 2px solid #000;
+    border-radius: 20%;
+    border-style: inset;
+    border-color: #270606;
+    background-color: #39000074;
+}
+
+.dificultMode:hover {
+    background-color: #270606;
+
+}
+
+.starGame {
+    padding: 10px;
+    border-radius: 20%;
+    border: 2px solid #270606;
+    background-color: #2a06016f;
+}
+
+.gameOver {
+    padding: 10px;
+    color: #fff;
+    text-align: center;
+}
+
+.gameOverscore {
+    padding: 10px;
+    color: #fff;
+    text-align: center;
+}
+
+.panel {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: absolute;
+    align-items: center;
+    box-sizing: border-box;
+    justify-content: center;
+}
+
+.retryButton {
+    margin: 0 50% 0 40%;
+    padding: 1.2%;
+    color: #fff6ba;
+    border-color: #ddcad7;
+    background-color: #320202;
+}
+
+.square {
+    width: 30vw;
+    height: 20vh;
+    grid-row: inherit;
+    box-sizing: border-box;
+    border: 1px solid #000;
+    background-color: #ddcad7;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.enemy {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: fill;
+    background-image: url("../imagens/ralph.png");
+}
+
+.menu-vidas {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.numero-counts {
+    margin-top: 10px;
+}
+
+@media screen and (min-width: 200px) {
+    .menu {
+        font-size: 40%;
+    }
+
+    .square {
+        width: 30vw;
+        height: 20vh;
+    }
+
+    .gameOver {
+        font-size: 1rem;
+    }
+
+    .gameOverscore {
+        font-size: 1rem;
+    }
+
+    .gameOver {
+        font-size: 1rem;
+    }
+
+    .retryButton {
+        font-size: 1rem;
+        margin: 0 50%;
+    }
+
+    .menu-vidas {
+        font-size: 0.7rem;
+    }
+
+    #player {
+        width: 25%;
+        height: 25%;
+    }
+
+    #hearts {
+        width: 50%;
+        height: 50%;
+    }
+
+    .numero-counts {
+        font-size: 0.8rem;
+        margin-top: 10px;
+    }
+
+    .dificultMode {
+        font-size: 0.65rem;
+    }
+
+    .menuStarter {
+
+        width: 75vw;
+        height: 20vh;
+    }
+
+    .retry {
+        width: 75vw;
+        height: 20vh;
+    }
+
+    .starGame {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (min-width: 576px) {
+    .menu {
+        font-size: 1rem;
+    }
+
+    .square {
+        width: 25vw;
+        max-width: 320px;
+        height: 20vh;
+        max-height: 320px;
+    }
+
+    .gameOver {
+        font-size: 2rem;
+    }
+
+    .gameOverscore {
+        font-size: 2rem;
+    }
+
+    .retryButton {
+        font-size: 1.5rem;
+        margin: 0 50%;
+    }
+
+    .menu-vidas {
+        font-size: 1rem;
+    }
+
+    #player {
+        width: 50%;
+        height: 50%;
+    }
+
+    #hearts {
+        width: 134px;
+        height: 47px;
+    }
+
+    .numero-counts {
+        font-size: 1.5rem;
+        margin-top: 10px;
+    }
+
+    .dificultMode {
+        font-size: 1rem;
+    }
+
+    .menuStarter {
+        width: 65vw;
+        height: 20vh;
+        max-width: 675px;
+        max-height: 270px;
+
+    }
+
+    .retry {
+        width: 65vw;
+        height: 20vh;
+        max-width: 675px;
+        max-height: 270px;
+    }
+
+    .starGame {
+        font-size: 2.5rem;
+    }
 }
