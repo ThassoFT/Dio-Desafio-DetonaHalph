@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detona Ralph</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./src/styles/reset.css">
+    <link rel="stylesheet" href="./src/styles/style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="menu">
+            <div class="menu-time">
+                <h2 style="color: red;">Time<br> Left</h2>
+                <h2 class="numero-counts" id="time-left">0</h2>
+            </div>
+            <div class="menu-score">
+                <h2 style="color: red;">Your<br> Score</h2>
+                <h2 class="numero-counts" id="score">0</h2>
+            </div>
+            <div class="menu-vidas">
+                <img src="./src/imagens/player.png" alt="Player" id="player">
+                <img src="./src/imagens/hearts/hearts1.png" alt="vida" id="hearts">
+            </div>
+        </div>
+        <div class="panel">
+            <div class="panel-row">
+                <div class="square enemy" id="1"></div>
+                <div class="square" id="2"></div>
+                <div class="square" id="3"></div>
+            </div>
+            <div class="panel-row">
+                <div class="square" id="4"></div>
+                <div class="square" id="5"></div>
+                <div class="square" id="6"></div>
+            </div>
+            <div class="panel-row">
+                <div class="square" id="7"></div>
+                <div class="square" id="8"></div>
+                <div class="square" id="9"></div>
+            </div>
+        </div>
+        <div class="menuStarter" id="menuStarter">
+            <div class="starGame">Start</div>
+            <div class="dificultView">Easy</div>
+            <div class="selectDificult">
+                <div class="dificultMode" id="easy">easy</div>
+                <div class="dificultMode" id="normal">normal</div>
+                <div class="dificultMode" id="hard">hard</div>
+                <button id="hardPlus" class="hardPlus">+0</button>
+            </div>
+
+        </div>
+        <div class="hidder" id="retry">
+            <div class="gameOver">Game Over</div>
+            <div class="gameOverscore" id="gameOverscore">0</div>
+            <button id="retryButton" class="retryButton">retry</button>
+        </div>
+    </div>
+    <script defer src="./src/scripts/engine.js"></script>
+</body>
+<!-- hidden="menuIsHidden" -->
+
+</html>
