@@ -150,6 +150,7 @@
         font-size: 40%;
     }
 
+
     .square {
         width: 30vw;
         height: 20vh;
@@ -216,11 +217,15 @@
         font-size: 1rem;
     }
 
+    .panel-row {
+        margin-top: 2%;
+    }
+
     .square {
-        width: 25vw;
-        max-width: 320px;
-        height: 20vh;
-        max-height: 320px;
+        width: 20vw;
+        max-width: 218px;
+        height: 22vh;
+        max-height: 128px;
     }
 
     .gameOver {
@@ -260,16 +265,16 @@
     }
 
     .menuStarter {
-        width: 65vw;
-        height: 20vh;
+        width: 45vw;
+        height: 30vh;
         max-width: 675px;
         max-height: 270px;
 
     }
 
     .retry {
-        width: 65vw;
-        height: 20vh;
+        width: 45vw;
+        height: 30vh;
         max-width: 675px;
         max-height: 270px;
     }
